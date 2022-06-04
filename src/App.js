@@ -10,6 +10,7 @@ import SignUp from './components/auth/SignUp'
 import SignIn from './components/auth/SignIn'
 import SignOut from './components/auth/SignOut'
 import ChangePassword from './components/auth/ChangePassword'
+import TaskHeader from './components/TaskHeader/TaskHeader'
 
 class App extends Component {
   constructor (props) {
@@ -55,7 +56,8 @@ class App extends Component {
             deleteAlert={this.deleteAlert}
           />
         ))}
-	      <main className='container'>
+        <main className='container'>
+          <TaskHeader />
 	        <Route
             path='/sign-up'
             render={() => (
